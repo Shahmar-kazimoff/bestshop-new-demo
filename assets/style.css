@@ -1,0 +1,239 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.nav-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-logo {
+  width: 50%;
+}
+
+.nav-button:hover + .nav-linked {
+  display: block;
+}
+
+.nav-button {
+  position: relative;
+}
+
+.carousel-edit {
+  position: relative;
+  z-index: -1;
+}
+
+.carousel-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  padding: 150px 70px;
+}
+
+.carousel-text1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.carousel-text2 {
+  font-size: 30px;
+}
+
+.section-second-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 100px auto;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+}
+
+.first-picture {
+  width: 100%;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.second-picture,
+.third-picture {
+  grid-column: span 2;
+}
+
+.price-card {
+  position: relative;
+}
+
+.sale-button {
+  position: absolute;
+  background-color: red;
+  color: white;
+  font-size: 13px;
+  left: 16px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  padding: 2px 13px;
+  top: 19px;
+  border-radius: 5px;
+}
+
+.sale-button:hover {
+  background-image: url("https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/index-3-products/p3.jpg");
+}
+
+.sale-button1 {
+  background-color: #8BD485;
+  position: absolute;
+  color: white;
+  font-size: 13px;
+  left: 16px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  padding: 2px 13px;
+  top: 19px;
+  border-radius: 5px;
+}
+
+.card1-hover:hover {
+  content: url("https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/index-3-products/p3.jpg");
+}
+
+.card2-hover:hover {
+  content: url("https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/index-3-products/p4.jpg");
+}
+
+.card3-hover:hover {
+  content: url("https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/index-3-products/p6.jpg");
+}
+
+.card4-hover:hover {
+  content: url("https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/index-3-products/p8.jpg");
+}
+
+.card5-hover:hover {
+  content: url("https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/index-3-products/p10.jpg");
+}
+
+.card6-hover:hover {
+  content: url("https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/index-3-products/p2.jpg");
+}
+
+.card-title:hover {
+  color: red;
+}
+
+.add-cart:hover {
+  color: red;
+}
+
+.carousel2-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-image: url("https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/tbgestimonial.jpg");
+}
+
+.blog-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+  width: 100%;
+  height: 600px;
+  background-color: #F8F8F8;
+}
+
+.button-control:hover {
+  background-color: white !important;
+  color: red !important;
+}
+
+.button-control {
+  margin: 10px 0;
+}
+
+.button2-control {
+  height: 100%;
+  width: 80px;
+  text-align: center;
+  border-radius: 0px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-text1 {
+    padding-top: 5px;
+    font-size: 20px !important;
+    font-weight: bold;
+  }
+  .carousel-text2 {
+    font-size: 15px !important;
+  }
+  .section1-button {
+    font-size: 5px !important;
+  }
+  .services {
+    margin: 20px 0;
+  }
+  .form-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button-control {
+    width: 100%;
+    margin-left: 1rem !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .nav-linked {
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+  }
+  .carousel-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+  .carousel-text1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .carousel-text2 {
+    font-size: 15px;
+  }
+  .section-second-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 0 50px;
+  }
+}
+.container-all {
+  max-width: 1080px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
